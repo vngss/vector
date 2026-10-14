@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">s
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoEx — Centro Logístico Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Questrial&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="landing">
+
+  <header class="site-header">
+    <a class="logo" href="index.html" data-logo aria-label="EchoEx"></a>
+    <nav class="header-nav">
+      <a href="#" class="link-login" data-action="open-login">Fazer Login</a>
+      <a href="#" class="pill-btn" data-action="open-signup">Crie agora sua conta <span aria-hidden="true">&#8250;</span></a>
+    </nav>
+  </header>
+
+  <main class="landing">
+    <section class="hero-card" style="--img:url('img/galpao.jpg')">
+      <h1>Visão Geral</h1>
+    </section>
+
+    <section class="hero-text">
+      <p>Bem vindo ao Centro Logístico Online da EchoEx! Onde a organização acontece.</p>
+    </section>
+
+    <a class="tall-card" href="painel.html#horarios" style="--img:url('img/horarios.jpg')">
+      <h2>Horários e Capacidade</h2>
+    </a>
+
+    <a class="tall-card" href="painel.html#remuneracao" style="--img:url('img/remuneracao.jpg')">
+      <h2>Remuneração</h2>
+    </a>
+
+    <p class="hero-sub">
+      Acesse as guias para acessar as funções como
+      <a href="painel.html#receber">Receber Pacotes</a> e ver os seus
+      <a href="painel.html#armazenados">Pacotes Armazenados</a>.
+    </p>
+  </main>
+
+  <div class="waves" id="waves" aria-hidden="true"></div>
+
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
