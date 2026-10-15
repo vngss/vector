@@ -1,53 +1,220 @@
 <!DOCTYPE html>
-<html lang="pt-BR">s
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EchoEx — Centro Logístico Online</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Questrial&family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoEx - Início</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        /* Top Header */
+        header {
+            background-color: #3d6435;
+            height: 65px;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-box {
+            background-color: white;
+            padding: 2px 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-box span {
+            color: #3d6435;
+            font-weight: 900;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .btn-register {
+            background-color: #d1d5db;
+            color: #333333;
+            padding: 8px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Hero Content Container */
+        .hero-container {
+            max-width: 1300px;
+            margin: 40px auto 0 auto;
+            padding: 0 40px;
+            display: grid;
+            grid-template-columns: 480px 1fr 140px 140px;
+            gap: 30px;
+            align-items: start;
+            flex: 1;
+        }
+
+        /* Column 1: Main Banner Image */
+        .main-banner {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #4d7a44, #2d4a27), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800') center/cover;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-banner h1 {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        /* Column 2: Center Text */
+        .center-text-box {
+            padding-top: 10px;
+        }
+
+        .center-text-box h2 {
+            font-size: 24px;
+            color: #222;
+            font-weight: normal;
+            line-height: 1.35;
+            margin-bottom: 40px;
+        }
+
+        .center-text-box p {
+            font-size: 18px;
+            color: #222;
+            line-height: 1.4;
+        }
+
+        .center-text-box a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        /* Column 3 & 4: Vertical Cards */
+        .vertical-card {
+            width: 100%;
+            height: 380px;
+            background: linear-gradient(180deg, #628259, #3a5633), url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400') center/cover;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .vertical-card.card-remuneracao {
+            background: linear-gradient(180deg, #5b7a52, #2f4929), url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400') center/cover;
+        }
+
+        .vertical-card span {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            right: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            word-wrap: break-word;
+        }
+
+        /* Footer Wave Lines Design */
+        .footer-waves {
+            width: 100%;
+            height: 120px;
+            margin-top: auto;
+            background-color: transparent;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .footer-waves svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<body data-page="landing">
+<body>
 
-  <header class="site-header">
-    <a class="logo" href="index.html" data-logo aria-label="EchoEx"></a>
-    <nav class="header-nav">
-      <a href="#" class="link-login" data-action="open-login">Fazer Login</a>
-      <a href="#" class="pill-btn" data-action="open-signup">Crie agora sua conta <span aria-hidden="true">&#8250;</span></a>
-    </nav>
-  </header>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo-box">
+            <span>ECHO EX</span>
+        </div>
+        <div class="header-actions">
+            <a href="visao-geral.html" class="login-link">Fazer Login</a>
+            <a href="#" class="btn-register">Crie agora sua conta &gt;</a>
+        </div>
+    </header>
 
-  <main class="landing">
-    <section class="hero-card" style="--img:url('img/galpao.jpg')">
-      <h1>Visão Geral</h1>
-    </section>
+    <!-- Main Content Grid -->
+    <main class="hero-container">
+        <!-- Main Image Banner -->
+        <div class="main-banner">
+            <h1>Visão Geral</h1>
+        </div>
 
-    <section class="hero-text">
-      <p>Bem vindo ao Centro Logístico Online da EchoEx! Onde a organização acontece.</p>
-    </section>
+        <!-- Center Text Information -->
+        <div class="center-text-box">
+            <h2>Bem vindo ao<br>Centro Logístico<br>Online da EchoEx!<br>Onde a<br>organização<br>acontece.</h2>
+            <p>Acesse as guias para acessar as funções como <a href="receber-pacotes.html">Receber Pacotes</a> e ver os seus <a href="pacotes-armazenados.html">Pacotes Armazenados</a>.</p>
+        </div>
 
-    <a class="tall-card" href="painel.html#horarios" style="--img:url('img/horarios.jpg')">
-      <h2>Horários e Capacidade</h2>
-    </a>
+        <!-- Vertical Banner 1 -->
+        <div class="vertical-card">
+            <span>Horários e Capacidade</span>
+        </div>
 
-    <a class="tall-card" href="painel.html#remuneracao" style="--img:url('img/remuneracao.jpg')">
-      <h2>Remuneração</h2>
-    </a>
+        <!-- Vertical Banner 2 -->
+        <div class="vertical-card card-remuneracao">
+            <span>Remuneração</span>
+        </div>
+    </main>
 
-    <p class="hero-sub">
-      Acesse as guias para acessar as funções como
-      <a href="painel.html#receber">Receber Pacotes</a> e ver os seus
-      <a href="painel.html#armazenados">Pacotes Armazenados</a>.
-    </p>
-  </main>
+    <!-- Ondas na parte inferior -->
+    <div class="footer-waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path fill="none" stroke="#608a55" stroke-width="1.5" d="M0,30 Q360,90 720,30 T1440,30"></path>
+            <path fill="none" stroke="#4d7443" stroke-width="1.5" d="M0,50 Q360,10 720,70 T1440,40"></path>
+            <path fill="none" stroke="#3a5c32" stroke-width="1.5" d="M0,70 Q360,110 720,50 T1440,80"></path>
+            <path fill="none" stroke="#85a87b" stroke-width="1.5" d="M0,90 Q360,40 720,90 T1440,60"></path>
+        </svg>
+    </div>
 
-  <div class="waves" id="waves" aria-hidden="true"></div>
-
-  <div id="modal-root"></div>
-  <div id="toast" role="status" aria-live="polite"></div>
-
-  <script src="app.js"></script>
 </body>
 </html>
