@@ -7,14 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Sidebar comum omitida para brevidade, manter a mesma da Visão Geral -->
+
     <aside class="sidebar">
-        <!-- Reutilize o menu da página Visão Geral trocando o .active para esta página -->
+        <div>
+            <div class="logo-container">
+                <div class="logo-circle"><i class="fa-solid fa-bicycle fa-xl"></i></div>
+                <div class="logo-text">ECHO EX</div>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="visao-geral.html" class="nav-item"><i class="fa-solid fa-house"></i> Visão Geral</a>
+                <a href="receber-pacotes.html" class="nav-item active"><i class="fa-solid fa-arrow-down"></i> Receber Pacotes</a>
+                <a href="pacotes-armazenados.html" class="nav-item"><i class="fa-solid fa-box"></i> Pacotes Armazenados</a>
+                <a href="coleta-pacotes.html" class="nav-item"><i class="fa-solid fa-truck"></i> Coleta de Pacotes</a>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="horarios-capacidade.html" class="nav-item"><i class="fa-solid fa-clock"></i> Horários e Capacidade</a>
+                <a href="remuneracao.html" class="nav-item"><i class="fa-solid fa-money-bill-wave"></i> Remuneração</a>
+            </div>
+        </div>
+
+        <a href="perfil.html" class="user-profile">
+            <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
+            <div class="user-info">
+                <h4>Natan peninha</h4>
+                <p>Centro Ativo</p>
+            </div>
+        </a>
     </aside>
 
     <main class="main-content">
         <header class="top-bar">
-            <div class="page-title">Operação / <span>Receber Pacotes</span></div>
+            <div class="top-bar-left">
+                <a href="javascript:history.back()" class="btn-back" title="Voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="page-title">Operação / <span>Receber Pacotes</span></div>
+            </div>
             <div class="help-btn">?</div>
         </header>
 
@@ -41,8 +69,7 @@
                     </div>
                 </div>
 
-                <!-- Exemplo com detalhes expandidos / Modal -->
-                <div class="item-card" style="grid-column: span 1; align-items: flex-start; flex-direction: column;">
+                <div class="item-card" style="align-items: flex-start; flex-direction: column;">
                     <div style="display: flex; gap: 15px; align-items: center; width: 100%;">
                         <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=200" class="item-thumb" alt="Copo de Caveira">
                         <div class="item-info">
@@ -61,5 +88,6 @@
             </div>
         </section>
     </main>
+
 </body>
 </html>
