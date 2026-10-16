@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EchoEx - Perfil do Operador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .profile-header {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 24px;
+        }
+        .profile-avatar-lg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300');
+            background-size: cover;
+            border: 4px solid #3a5d2e;
+        }
+        .profile-details grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .info-card h4 { color: #64748b; font-size: 13px; text-transform: uppercase; margin-bottom: 6px; }
+        .info-card p { font-size: 18px; font-weight: 600; color: #1e293b; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div>
+            <div class="logo-container">
+                <div class="logo-circle"><i class="fa-solid fa-bicycle fa-lg"></i></div>
+                <div class="logo-text">ECHO EX</div>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="visao-geral.html" class="nav-item"><i class="fa-solid fa-house"></i> Visão Geral</a>
+                <a href="receber-pacotes.html" class="nav-item"><i class="fa-solid fa-arrow-down"></i> Receber Pacotes</a>
+                <a href="pacotes-armazenados.html" class="nav-item"><i class="fa-solid fa-box"></i> Pacotes Armazenados</a>
+                <a href="coleta-pacotes.html" class="nav-item"><i class="fa-solid fa-truck"></i> Coleta de Pacotes</a>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="horarios-capacidade.html" class="nav-item"><i class="fa-solid fa-clock"></i> Horários e Capacidade</a>
+                <a href="remuneracao.html" class="nav-item"><i class="fa-solid fa-money-bill-wave"></i> Remuneração</a>
+            </div>
+        </div>
+
+        <a href="perfil.html" class="user-profile">
+            <div class="avatar"></div>
+            <div class="user-info">
+                <h4>Natan peninha</h4>
+                <p>Centro Ativo</p>
+            </div>
+        </a>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <a href="javascript:history.back()" class="btn-back" title="Voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="page-title">Operador / <span>Perfil Detalhado</span></div>
+            </div>
+            <div class="help-btn">?</div>
+        </header>
+
+        <section class="content-body">
+            <div class="profile-header">
+                <div class="profile-avatar-lg"></div>
+                <div>
+                    <h1 style="font-size: 28px; color: #1e293b;">Natan Peninha</h1>
+                    <p style="color: #3a5d2e; font-weight: 600;"><i class="fa-solid fa-shield-halved"></i> Operador Logístico Sénior</p>
+                    <p style="color: #64748b; font-size: 14px; margin-top: 4px;">ID Operativo: #EX-99824</p>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div class="info-card">
+                    <h4>Centro de Operações Ativo</h4>
+                    <p>Recife Central - Hub 01</p>
+                </div>
+                <div class="info-card">
+                    <h4>Turno Actual</h4>
+                    <p>08:00 - 17:00 (Presencial)</p>
+                </div>
+                <div class="info-card">
+                    <h4>Pacotes Processados Hoje</h4>
+                    <p>142 Encomendas</p>
+                </div>
+                <div class="info-card">
+                    <h4>Estatuto do Utilizador</h4>
+                    <p style="color: #16a34a;"><i class="fa-solid fa-circle-check"></i> Activo e Autenticado</p>
+                </div>
+            </div>
+
+            <a href="index.html" style="display: inline-block; margin-top: 30px; background: #dc2626; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+                <i class="fa-solid fa-right-from-bracket"></i> Terminar Sessão (Sair)
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>
