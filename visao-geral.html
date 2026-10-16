@@ -5,10 +5,47 @@
     <title>EchoEx - Visão Geral</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .location-card {
+            display: block;
+            position: relative;
+            height: 180px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 3px solid #3a5d2e;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .location-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .location-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s;
+        }
+
+        .location-card:hover img {
+            filter: brightness(0.85);
+        }
+
+        .location-card h2 {
+            position: absolute;
+            right: 25px;
+            bottom: 15px;
+            color: white;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Menu Lateral -->
+    <!-- Menu Lateral Completo -->
     <aside class="sidebar">
         <div>
             <div class="logo-container">
@@ -29,7 +66,7 @@
             </div>
         </div>
 
-        <!-- Perfil Sem Foto -->
+        <!-- Perfil sem foto -->
         <a href="perfil.html" class="user-profile">
             <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
             <div class="user-info">
@@ -43,7 +80,7 @@
     <main class="main-content">
         <header class="top-bar">
             <div class="top-bar-left">
-                <!-- Seta de Voltar -->
+                <!-- Seta de Voltar para a página anterior/menu -->
                 <a href="javascript:history.back()" class="btn-back" title="Voltar"><i class="fa-solid fa-arrow-left"></i></a>
                 <div class="page-title">Operação / <span>Visão Geral</span></div>
             </div>
@@ -55,14 +92,17 @@
             <h1 style="font-size: 36px; margin-bottom: 25px;">Centro Logístico</h1>
 
             <div style="display: flex; flex-direction: column; gap: 20px;">
-                <div style="position: relative; height: 180px; border-radius: 20px; overflow: hidden; border: 3px solid #3a5d2e;">
-                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000" style="width: 100%; height: 100%; object-fit: cover;">
-                    <h2 style="position: absolute; right: 25px; bottom: 15px; color: white; font-size: 42px; text-shadow: 2px 2px 4px #000;">Recife</h2>
-                </div>
-                <div style="position: relative; height: 180px; border-radius: 20px; overflow: hidden; border: 3px solid #3a5d2e;">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000" style="width: 100%; height: 100%; object-fit: cover;">
-                    <h2 style="position: absolute; right: 25px; bottom: 15px; color: white; font-size: 42px; text-shadow: 2px 2px 4px #000;">Olinda</h2>
-                </div>
+                <!-- Cartão Clicável 1: Recife -->
+                <a href="horarios-capacidade.html" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000" alt="Recife">
+                    <h2>Recife</h2>
+                </a>
+
+                <!-- Cartão Clicável 2: Olinda -->
+                <a href="coleta-pacotes.html" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000" alt="Olinda">
+                    <h2>Olinda</h2>
+                </a>
             </div>
         </section>
     </main>
