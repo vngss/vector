@@ -7,9 +7,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <aside class="sidebar">
+        <div>
+            <div class="logo-container">
+                <div class="logo-circle"><i class="fa-solid fa-bicycle fa-xl"></i></div>
+                <div class="logo-text">ECHO EX</div>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="visao-geral.html" class="nav-item"><i class="fa-solid fa-house"></i> Visão Geral</a>
+                <a href="receber-pacotes.html" class="nav-item"><i class="fa-solid fa-arrow-down"></i> Receber Pacotes</a>
+                <a href="pacotes-armazenados.html" class="nav-item active"><i class="fa-solid fa-box"></i> Pacotes Armazenados</a>
+                <a href="coleta-pacotes.html" class="nav-item"><i class="fa-solid fa-truck"></i> Coleta de Pacotes</a>
+            </div>
+            <div class="nav-section">
+                <div class="section-title">Operação</div>
+                <a href="horarios-capacidade.html" class="nav-item"><i class="fa-solid fa-clock"></i> Horários e Capacidade</a>
+                <a href="remuneracao.html" class="nav-item"><i class="fa-solid fa-money-bill-wave"></i> Remuneração</a>
+            </div>
+        </div>
+
+        <a href="perfil.html" class="user-profile">
+            <div class="avatar-placeholder"><i class="fa-solid fa-user"></i></div>
+            <div class="user-info">
+                <h4>Natan peninha</h4>
+                <p>Centro Ativo</p>
+            </div>
+        </a>
+    </aside>
+
     <main class="main-content">
         <header class="top-bar">
-            <div class="page-title">Operação / <span>Pacotes Armazenados</span></div>
+            <div class="top-bar-left">
+                <a href="javascript:history.back()" class="btn-back" title="Voltar"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="page-title">Operação / <span>Pacotes Armazenados</span></div>
+            </div>
             <div class="help-btn">?</div>
         </header>
 
@@ -28,12 +61,12 @@
                     </div>
                 </div>
 
-                <!-- Botão Adicionar Pacote -->
                 <div class="item-card" style="justify-content: center; cursor: pointer;">
-                    <i class="fa-solid fa-plus" style="font-size: 40px; color: #3A5D2E;"></i>
+                    <i class="fa-solid fa-plus" style="font-size: 45px; color: #3a5d2e;"></i>
                 </div>
             </div>
         </section>
     </main>
+
 </body>
 </html>
