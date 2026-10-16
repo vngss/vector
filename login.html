@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EchoEx - Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -12,8 +13,7 @@
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; font-size: 14px; font-weight: 600; color: #475569; margin-bottom: 6px; }
         .form-group input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; outline: none; }
-        .btn-submit { width: 100%; background: #3a5d2e; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; transition: background 0.2s; }
-        .btn-submit:hover { background: #2d4a24; }
+        .btn-submit { width: 100%; background: #3a5d2e; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; }
         .back-link { display: block; text-align: center; margin-top: 16px; color: #64748b; text-decoration: none; font-size: 14px; }
     </style>
 </head>
@@ -21,14 +21,14 @@
 
     <div class="login-card">
         <div class="logo-box">ECHO EX</div>
-        <h2 style="text-align: center; margin-bottom: 20px; color: #1e293b;">Aceder à Plataforma</h2>
+        <h2 style="text-align: center; margin-bottom: 20px; color: #1e293b;">Acessar a Plataforma</h2>
         <form action="visao-geral.html">
             <div class="form-group">
-                <label>E-mail ou Utilizador</label>
-                <input type="text" placeholder="exemplo@echoex.com" required>
+                <label>E-mail ou Usuário</label>
+                <input type="text" placeholder="natan.peninha@echoex.com" required>
             </div>
             <div class="form-group">
-                <label>Palavra-passe</label>
+                <label>Senha</label>
                 <input type="password" value="12345678" required>
             </div>
             <button type="submit" class="btn-submit">Entrar no Sistema</button>
